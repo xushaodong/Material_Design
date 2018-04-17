@@ -1,0 +1,85 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5789C"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E5789C"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true">
+
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/app_bar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E5789C"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:layout_scrollFlags="scroll|enterAlways">
+
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/tool_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="#E5789C"
+                    app:layout_scrollFlags="scroll|enterAlways"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"></android.support.v7.widget.Toolbar>
+
+                    <android.support.design.widget.TabLayout
+                        android:id="@+id/tabs"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="#E5789C"
+                        app:tabGravity="fill"
+                        app:tabIndicatorColor="#ffffff"
+                        app:tabMode="fixed"
+                        app:tabSelectedTextColor="#ffffff"
+                        app:tabTextColor="#000000" />
+
+            </android.support.design.widget.AppBarLayout>
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ccffbdbd"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:layout_marginTop="30dp"
+                app:rippleColor="#fb6d59"
+                app:borderWidth="0dp"
+                android:src="@mipmap/live_share_3x"
+                app:backgroundTint="#79aa37" />
+
+
+        </android.support.design.widget.CoordinatorLayout>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/drawer_header"
+        app:menu="@menu/menu_drawer" />
+
+</android.support.v4.widget.DrawerLayout>

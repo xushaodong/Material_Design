@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/item_attention"
+        android:icon="@mipmap/live_share_3x"
+        android:title="关注"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/item_commend"
+        android:icon="@mipmap/live_commend"
+        android:title="评论"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/item_home"
+        android:icon="@mipmap/live_anchor"
+        android:title="主页"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_item1"
+        android:title="日本"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_item2"
+        android:title="天朝"
+        app:showAsAction="never" />
+</menu>

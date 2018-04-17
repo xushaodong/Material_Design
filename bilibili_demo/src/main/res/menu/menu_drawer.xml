@@ -1,0 +1,52 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/drawer_home"
+            android:checked="true"
+            android:icon="@mipmap/live_anchor"
+            android:title="菜单栏" />
+
+        <item
+            android:id="@+id/section1"
+            android:icon="@mipmap/live_commend"
+            android:title="分组1">
+            <menu>
+
+                <item
+                    android:id="@+id/menu_info_details"
+                    android:checked="true"
+                    android:icon="@mipmap/live_commend"
+                    android:title="树屋女孩" />
+
+                <item
+                    android:id="@+id/menu_share"
+                    android:checked="true"
+                    android:icon="@mipmap/live_commend"
+                    android:title="二次元" />
+
+            </menu>
+        </item>
+
+        <item
+            android:id="@+id/section2"
+            android:icon="@mipmap/live_commend"
+            android:title="分组2">
+            <menu>
+
+                <item
+                    android:id="@+id/menu_agenda"
+                    android:checked="true"
+                    android:icon="@mipmap/live_commend"
+                    android:title="哔哩秀场" />
+                <item
+                    android:id="@+id/menu_zhuti"
+                    android:checked="true"
+                    android:icon="@mipmap/live_commend"
+                    android:title="魔幻城堡" />
+
+            </menu>
+        </item>
+    </group>
+</menu>
